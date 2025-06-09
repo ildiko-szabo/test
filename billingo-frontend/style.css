@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #fdfdfd;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #0b57d0;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  display: block;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1920x800') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 150px 20px 100px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff9500;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ffa733;
+}
+
+.features, .pricing, .contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 0 1 200px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.price-table {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 0 1 200px;
+}
+
+.price-card.popular {
+  background: #0b57d0;
+  color: white;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  background: #0b57d0;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #0b57d0;
+    flex-direction: column;
+    display: none;
+    padding: 10px;
+  }
+  .menu a {
+    margin: 10px 0;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}

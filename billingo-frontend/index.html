@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billingo - Engaging Frontend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Billingo</div>
+    <nav id="menu" class="menu">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <section class="hero">
+    <h1>Invoicing Simplified</h1>
+    <p>Modern features with a sleek design</p>
+    <a href="#pricing" class="btn">Get Started</a>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Awesome Features</h2>
+    <div class="cards">
+      <div class="card">Easy invoicing</div>
+      <div class="card">Real-time analytics</div>
+      <div class="card">Secure cloud storage</div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Pricing</h2>
+    <div class="price-table">
+      <div class="price-card">
+        <h3>Basic</h3>
+        <p>$10 / month</p>
+      </div>
+      <div class="price-card popular">
+        <h3>Pro</h3>
+        <p>$20 / month</p>
+      </div>
+      <div class="price-card">
+        <h3>Enterprise</h3>
+        <p>Contact us</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <button id="backToTop" onclick="scrollToTop()">▲</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
